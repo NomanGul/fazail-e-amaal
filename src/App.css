@@ -1,32 +1,117 @@
-.App {
-  text-align: center;
-}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+body {
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
   flex-direction: column;
-  align-items: center;
+}
+
+.center-pdf,
+.center-pdf > * {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 
-.App-link {
-  color: #61dafb;
+.search {
+  max-width: 50%;
+  min-width: 60%;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid #00b4cc;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.searchTerm:focus {
+  color: #00b4cc;
+}
+
+.searchButton {
+  position: absolute;
+  right: -50px;
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00b4cc;
+  background: #00b4cc;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.nav-buttons > * {
+  background-color: #28e6ff;
+  border: none;
+  color: rgb(85, 85, 85);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bolder;
+  margin: 4px 2px;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+.nav-buttons > *:hover {
+  background: #00b6ce;
+  color: aliceblue;
+}
+
+.nav-buttons > *:disabled {
+  background: #00b6ce;
+  color: aliceblue;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+canvas {
+  max-width: 100%;
+  height: auto !important;
+}
+.react-pdf__Page__textContent {
+  display: none !important;
+}
+
+footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  background: #00ffd0;
+  color: #0c0c0c;
+  width: 100%;
+  height: 20px;
+}
+
+.footerText {
+  margin: auto;
+  font-size: 12px;
 }
