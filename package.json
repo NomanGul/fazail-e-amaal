@@ -1,8 +1,8 @@
 {
+  "homepage": "https://nomangul.github.io/fazail-e-amaal",
   "name": "fazaileamaal-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nomangul.github.io/fazail-e-amaal",
   "dependencies": {
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
